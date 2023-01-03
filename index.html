@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Mechanic</title>
+</head>
+<body>
+    <div id="screen">
+        <header>
+            <div id="user">
+                <i class="bi bi-person-circle"></i>
+                <h2>Olá, fulano</h2>
+            </div>
+            <p>ABC-1234</p>
+        </header>
+        <main id="menu">
+
+            <div id="container-main">
+                <div id="main-header">
+                    <h4 style="text-decoration: underline;">Grau de Urgência</h3>
+                    <div id="info-color">
+                        <div class="input-color">
+                            <input type="checkbox" name="checkbox_green" class="green" disabled checked>
+                            <label for="checkbox_green">Baixo</label>
+                        </div>
+                        <div class="input-color">
+                            <input type="checkbox" name="checkbox_yellow" class="yellow" checked disabled>
+                            <label for="checkbox_yellow">Médio</label>
+                        </div>
+                        <div class="input-color">
+                            <input type="checkbox" name="checkbox_red" class="red" checked disabled>
+                            <label for="checkbox_red">Alto</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="container-services">
+                    <div class="service">
+                        <h3>Caixa de Lux</h3>
+                        <p>Motivo: As setas estão entrando em curto</p>
+                        <div class="info-service">
+                            <p class="valor">R$ 30,00</p>
+                            <div class="input-color">
+                                <input type="checkbox" name="checkbox_yellow" class="yellow" checked disabled>
+                                <label for="checkbox_yellow">Médio</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="container-value-service">
+            <h3 id="value-service"><i class="bi bi-cash-coin"></i> Total: R$110,00</h3>
+            <button id="btn-confirm">Confirmar</button>
+        </div>
+    </div>
+</body>
+</html>
