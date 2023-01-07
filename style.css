@@ -29,7 +29,7 @@ h3, h4 {
     width: 296.66999999999996px;
     height: 163px;
     left: 0;
-    transform: rotate(359deg);
+    transform: rotate(0);
     filter:drop-shadow(4px 4px 4px rgb(255 122 0 / 29%));
 }
 header {
