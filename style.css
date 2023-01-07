@@ -138,7 +138,6 @@ input[type=checkbox] {
     cursor: pointer;
     border-radius: 5px;
 }
-
 input[type=checkbox]:before {
     content: "";
     display: block;
@@ -147,23 +146,23 @@ input[type=checkbox]:before {
     height: 30px;
     top: 0;
     left: 0;
-    background-color: #FF7A00;
-    border-radius: 5px;
+    border: 2px solid #FF7A00;
+    background: #fff;
 }
 
 input[type=checkbox]:checked:after {
     content: "";
     display: block;
-    width: 7px;
-    height: 12px;
-    border: solid white;
+    width: 8px;
+    height: 18px;
+    border: solid orange;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
     top: 5px;
-    left: 9px;
+    left: 11px;
 }
 span{
     margin: 0px 15px;
