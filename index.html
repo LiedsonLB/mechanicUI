@@ -7,9 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Mechanic</title>
+    <script src="./script.js" defer></script>
 </head>
 <body>
+    <div id="container-mensagem" class="hide">
+        <div id="info-color">
+            <div id="container-main">
+                <div id="main-header">
+                    <h3 id="title-info"><i class="bi bi-info-circle"></i> Grau de Urgência</h3>
+                    <p id="text-info">O grau de urgência é o nível de necessidade de um serviço, com essa informação o cliente está ciente sobre a escolha de serviços a ser feito.</p>
+                    <div id="info-color-msg">
+                        <div class="input-color" style="display: flex; justify-content: center;">
+                            <div class="square" style="background-color: gray;"></div>
+                            <p id="text-info">Serviço - Serviço já feito sobre pedido do cliente</p>
+                        </div>
+                        <div class="input-color" style="display: flex; justify-content: center;">
+                            <div class="square" style="background-color: green;"></div>
+                            <p id="text-info">Baixo - Serviço opcional do cliente</p>
+                        </div>
+                        <div class="input-color" style="display: flex; justify-content: center;">
+                            <div class="square" style="background-color: yellow;"></div>
+                            <p id="text-info">Médio - Serviço que é indicado ao cliente</p>
+                        </div>
+                        <div class="input-color" style="display: flex; justify-content: center;">
+                            <div class="square" style="background-color: red;"></div>
+                            <p id="text-info">Alto - Serviço urgente ao cliente</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="container-close-modal">
+                    <button id="close-modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="screen">
+
         <img src="./img/detalhe_lateral.png" alt="" id="detail">
         <header>
             <div id="user">
@@ -22,25 +56,6 @@
         </header>
         <main id="menu">
 
-            <div id="container-main">
-                <div id="main-header">
-                    <h4 style="text-decoration: underline;">Grau de Urgência</h3>
-                    <div id="info-color">
-                        <div class="input-color">
-                            <div class="square" style="background-color: green;"></div>
-                            <label>Baixo</label>
-                        </div>
-                        <div class="input-color">
-                            <div class="square" style="background-color: yellow;"></div>
-                            <label>Médio</label>
-                        </div>
-                        <div class="input-color">
-                            <div class="square" style="background-color: red;"></div>
-                            <label>Alto</label>
-                        </div>
-                    </div>
-                </div>
-
                 <div id="container-services">
 
                     <div class="service">
@@ -52,9 +67,10 @@
                             <div class="info-service">
                                 <p class="valor">Valor: R$ 30,00</p>
                                 <div class="input-color">
-                                    <div class="square" style="background-color: red;"></div>
-                                    <label>Alto</label>
+                                    <div class="square" style="background-color: orange;"></div>
+                                    <label>Médio</label>
                                 </div>
+                                <i class="bi bi-info-circle-fill"></i>
                             </div>
                         </div>
                         <div class="container-service-checkbox">
@@ -65,15 +81,16 @@
                     <div class="service">
                         <div class="service-container">
                             <div class="service-text">
-                                <h3>Caixa de Lux</h3>
+                                <h3>Capa Do Banco</h3>
                                 <p>Motivo: As setas estão entrando em curto</p>
                             </div>
                             <div class="info-service">
                                 <p class="valor">Valor: R$ 30,00</p>
                                 <div class="input-color">
-                                    <div class="square" style="background-color: red;"></div>
-                                    <label>Alto</label>
+                                    <div class="square" style="background-color: green;"></div>
+                                    <label>Baixo</label>
                                 </div>
+                                <i class="bi bi-info-circle-fill"></i>
                             </div>
                         </div>
                         <div class="container-service-checkbox">
@@ -84,8 +101,8 @@
                     <div class="service">
                         <div class="service-container">
                             <div class="service-text">
-                                <h3>Caixa de Lux</h3>
-                                <p>Motivo: As setas estão entrando em curto</p>
+                                <h3>Cabo Do Acelerador</h3>
+                                <p>Motivo: O cabo do acelerador está quase se partindo</p>
                             </div>
                             <div class="info-service">
                                 <p class="valor">Valor: R$ 30,00</p>
@@ -93,6 +110,7 @@
                                     <div class="square" style="background-color: red;"></div>
                                     <label>Alto</label>
                                 </div>
+                                <i class="bi bi-info-circle-fill"></i>
                             </div>
                         </div>
                         <div class="container-service-checkbox">
@@ -103,72 +121,16 @@
                     <div class="service">
                         <div class="service-container">
                             <div class="service-text">
-                                <h3>Caixa de Lux</h3>
-                                <p>Motivo: As setas estão entrando em curto</p>
+                                <h3>Revisão</h3>
+                                <p>Motivo: Serviço já feito por pedido do cliente</p>
                             </div>
                             <div class="info-service">
-                                <p class="valor">Valor: R$ 30,00</p>
+                                <p class="valor">Valor: R$ 50,00</p>
                                 <div class="input-color">
-                                    <div class="square" style="background-color: red;"></div>
-                                    <label>Alto</label>
+                                    <div class="square" style="background-color: gray;"></div>
+                                    <label>Serviço</label>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="container-service-checkbox">
-                            <input type="checkbox" class="select-service">
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service-container">
-                            <div class="service-text">
-                                <h3>Caixa de Lux</h3>
-                                <p>Motivo: As setas estão entrando em curto</p>
-                            </div>
-                            <div class="info-service">
-                                <p class="valor">Valor: R$ 30,00</p>
-                                <div class="input-color">
-                                    <div class="square" style="background-color: red;"></div>
-                                    <label>Alto</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-service-checkbox">
-                            <input type="checkbox" class="select-service">
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service-container">
-                            <div class="service-text">
-                                <h3>Caixa de Lux</h3>
-                                <p>Motivo: As setas estão entrando em curto</p>
-                            </div>
-                            <div class="info-service">
-                                <p class="valor">Valor: R$ 30,00</p>
-                                <div class="input-color">
-                                    <div class="square" style="background-color: red;"></div>
-                                    <label>Alto</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-service-checkbox">
-                            <input type="checkbox" class="select-service">
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service-container">
-                            <div class="service-text">
-                                <h3>Caixa de Lux</h3>
-                                <p>Motivo: As setas estão entrando em curto</p>
-                            </div>
-                            <div class="info-service">
-                                <p class="valor">Valor: R$ 30,00</p>
-                                <div class="input-color">
-                                    <div class="square" style="background-color: red;"></div>
-                                    <label>Alto</label>
-                                </div>
+                                <i class="bi bi-info-circle-fill"></i>
                             </div>
                         </div>
                         <div class="container-service-checkbox">
