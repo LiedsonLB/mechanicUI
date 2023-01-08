@@ -274,13 +274,12 @@ span{
     display: flex;
     font-family: 'Hind Siliguri', sans-serif;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     bottom: 0px;
-    left: 5%;
     animation: upAnimation 1s;
     align-items: center;
-    justify-content: center;
     margin-top: 2%;
+    position: fixed;
 }
 @keyframes upAnimation {
     0%{
