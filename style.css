@@ -361,4 +361,11 @@ span{
     #container-services::-webkit-scrollbar {
         display: none;
     }
+    .description-service{
+        top: 40% !important;
+        max-width: 17em !important;
+    }
+    .service {
+        min-height: 138px !important;
+    }
 }
