@@ -74,6 +74,12 @@ h3, h4 {
     height: auto;
     opacity: 1 !important;
 }
+.input-color-info {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    position: relative;
+}
 #screen {
     background: url(./img/background.png);
     display: grid;
@@ -150,6 +156,9 @@ header {
     display: flex;
     align-items: baseline;
     gap: 5px;
+    position: absolute;
+    bottom: 2%;
+    left: 9em;
 }
 .input-color label{
     font-size: 1em;
@@ -216,12 +225,43 @@ header {
     color: var(--primary-color);
     font-size: 20px;
     cursor: pointer;
+    position: absolute;
+    bottom: 1%; left: 11em;
 }
 .service {
     border-bottom: 1px solid #19253d;
     padding-bottom: 10px;
     padding-right: 10px;
     display: flex;
+    min-height: 110px;
+    position: relative;
+}
+.name-service {
+    color: var(--primary-color);
+    font-weight: bolder;
+    height: 7px;
+    font-family: 'Hind Siliguri', sans-serif;
+    display: block;
+    font-size: 1.17em !important;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.description-service {
+    position: absolute;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 50%;
+}
+.value{
+    position: absolute;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    bottom: 2%;
 }
 .service-container {
     width: 90%;
@@ -231,12 +271,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 5%;
 }
 input[type=checkbox] {
     position: relative;
     cursor: pointer;
     border-radius: 5px;
 }
+
 input[type=checkbox]:before {
     content: "";
     display: block;
@@ -248,6 +292,7 @@ input[type=checkbox]:before {
     border: 2px solid var(--primary-color);
     background: #fff;
 }
+
 input[type=checkbox]:checked:after {
     content: "";
     display: block;
