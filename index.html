@@ -17,19 +17,19 @@
                     <h3 id="title-info"><i class="bi bi-info-circle"></i> Grau de Urgência</h3>
                     <p id="text-info">O grau de urgência é o nível de necessidade de um serviço, com essa informação o cliente está ciente sobre a escolha de serviços a ser feito.</p>
                     <div id="info-color-msg">
-                        <div class="input-color" style="display: flex; justify-content: center;">
+                        <div class="input-color-info" style="display: flex; justify-content: center;">
                             <div class="square" style="background-color: gray;"></div>
-                            <p id="text-info">Serviço - Serviço feito sobre pedido do cliente</p>
+                            <p id="text-info">Serviço - Serviço já feito sobre pedido do cliente</p>
                         </div>
-                        <div class="input-color" style="display: flex; justify-content: center;">
+                        <div class="input-color-info" style="display: flex; justify-content: center;">
                             <div class="square" style="background-color: green;"></div>
                             <p id="text-info">Baixo - Serviço opcional do cliente</p>
                         </div>
-                        <div class="input-color" style="display: flex; justify-content: center;">
+                        <div class="input-color-info" style="display: flex; justify-content: center;">
                             <div class="square" style="background-color: yellow;"></div>
                             <p id="text-info">Médio - Serviço que é indicado ao cliente</p>
                         </div>
-                        <div class="input-color" style="display: flex; justify-content: center;">
+                        <div class="input-color-info" style="display: flex; justify-content: center;">
                             <div class="square" style="background-color: red;"></div>
                             <p id="text-info">Alto - Serviço urgente ao cliente</p>
                         </div>
@@ -56,90 +56,22 @@
         </header>
         <main id="menu">
 
-                <div id="container-services">
+            <table id="container-services">
+                <tr class="service">
+                  <td class="name-service">Caixa de Lux</td>
+                  <td class="description-service">Motivo: As setas estão entrando em curto</td>
+                  <td class="value">Valor: R$ 30,00</td>
+                  <td class="input-color">
+                    <div class="square" style="background-color: orange;"></div>
+                    <label>Médio</label>
+                  </td>
+                  <td class="bi bi-info-circle-fill"></td>
+                  <td class="container-service-checkbox">
+                    <input type="checkbox" class="select-service">
+                  </td>
+                </tr>
+              </table>
 
-                    <div class="service">
-                        <div class="service-container">
-                            <div class="service-text">
-                                <h3>Caixa de Lux</h3>
-                                <p>Motivo: As setas estão entrando em curto</p>
-                            </div>
-                            <div class="info-service">
-                                <p class="valor">Valor: R$ 30,00</p>
-                                <div class="input-color">
-                                    <div class="square" style="background-color: orange;"></div>
-                                    <label>Médio</label>
-                                </div>
-                                <i class="bi bi-info-circle-fill"></i>
-                            </div>
-                        </div>
-                        <div class="container-service-checkbox">
-                            <input type="checkbox" class="select-service">
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service-container">
-                            <div class="service-text">
-                                <h3>Capa Do Banco</h3>
-                                <p>Motivo: As setas estão entrando em curto</p>
-                            </div>
-                            <div class="info-service">
-                                <p class="valor">Valor: R$ 30,00</p>
-                                <div class="input-color">
-                                    <div class="square" style="background-color: green;"></div>
-                                    <label>Baixo</label>
-                                </div>
-                                <i class="bi bi-info-circle-fill"></i>
-                            </div>
-                        </div>
-                        <div class="container-service-checkbox">
-                            <input type="checkbox" class="select-service">
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service-container">
-                            <div class="service-text">
-                                <h3>Cabo Do Acelerador</h3>
-                                <p>Motivo: O cabo do acelerador está quase se partindo</p>
-                            </div>
-                            <div class="info-service">
-                                <p class="valor">Valor: R$ 30,00</p>
-                                <div class="input-color">
-                                    <div class="square" style="background-color: red;"></div>
-                                    <label>Alto</label>
-                                </div>
-                                <i class="bi bi-info-circle-fill"></i>
-                            </div>
-                        </div>
-                        <div class="container-service-checkbox">
-                            <input type="checkbox" class="select-service">
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service-container">
-                            <div class="service-text">
-                                <h3>Revisão</h3>
-                                <p>Motivo: Serviço já feito por pedido do cliente</p>
-                            </div>
-                            <div class="info-service">
-                                <p class="valor">Valor: R$ 50,00</p>
-                                <div class="input-color">
-                                    <div class="square" style="background-color: gray;"></div>
-                                    <label>Serviço</label>
-                                </div>
-                                <i class="bi bi-info-circle-fill"></i>
-                            </div>
-                        </div>
-                        <div class="container-service-checkbox">
-                            <input type="checkbox" class="select-service" checked disabled>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
         </main>
 
         <div id="container-value-service">
