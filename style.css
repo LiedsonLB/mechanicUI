@@ -354,6 +354,9 @@ span{
 #btn-confirm:hover {
     background: #19253d;
 }
+#confirm-service {
+    height: 1.5em;
+}
 .hide {
     display: none !important;
 }
