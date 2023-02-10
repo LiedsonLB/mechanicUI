@@ -10,6 +10,19 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
+
+    <div id="confirm-modal" class="hide">
+        <div id="container-confirm-modal">
+            <div id="alert-confirm">
+                <h4><i class="bi bi-exclamation-triangle-fill"></i> Deseja mesmo confirmar o serviço ?</h4>
+                <div id="confirm-buttons">
+                <button id="back">Voltar</button>
+                <button id="confirm-btn">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="container-mensagem" class="hide">
         <div id="info-color">
             <div id="container-main">
@@ -77,7 +90,8 @@
 
         <div id="container-value-service">
             <h3 id="value-service"><i class="bi bi-cash-coin"></i> Total: R$110,00</h3>
-            <h4><i class="bi bi-check-circle-fill"></i> O serviço já foi confirmado por você</h4>
+            <button id="btn-confirm">Confirmar</button>
+            <h4 id="confirm-service" class="hide"><i class="bi bi-check-circle-fill"></i> O serviço já foi confirmado por você</h4>
         </div>
     </div>
 </body>
