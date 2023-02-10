@@ -371,4 +371,10 @@ span{
     .service {
         min-height: 138px !important;
     }
+    #confirm-service {
+        height: 1.5em;
+        width: 200px;
+        text-align: center;
+        font-size: 15px;
+    }
 }
