@@ -16,6 +16,70 @@ h3, h4 {
     height: 7px;
     font-family: 'Hind Siliguri', sans-serif;
 }
+                                                           /*Modal de confirmação*/
+
+#container-confirm-modal {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(242, 245, 251, 1);
+    box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    max-width: 600px;
+    margin: 0px 20px;
+    animation: downAnimation .5s;
+    height: 200px;
+}
+#confirm-modal {
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    backdrop-filter: brightness(0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#alert-confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+#alert-confirm h4 {
+    height: 20px;
+}
+#confirm-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#back {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bolder;
+    background-color: dimgray;
+    color: #f2f5fb;
+    border: none;
+    font-size: 15px;
+    padding: 5px 41px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 144px;
+}
+#confirm-btn {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bolder;
+    background-color: var(--primary-color);
+    color: #f2f5fb;
+    border: none;
+    font-size: 15px;
+    padding: 5px 41px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 144px;
+}
 #container-mensagem {
     height: 100vh;
     width: 100%;
