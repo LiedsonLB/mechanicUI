@@ -1,6 +1,7 @@
 var infos = document.querySelectorAll(".bi-info-circle-fill");
 var Message = document.getElementById("container-mensagem");
 var closeBtn = document.getElementById("close-modal");
+var checkbox = document.querySelectorAll(".select-service");
 
 // Função que alerta o ID da div clicada
 function infoClick() {
@@ -32,4 +33,8 @@ confirma.addEventListener("click", () => {
     ConfirmModal.classList.toggle("hide");
     confirmBtn.classList.add("hide");
     confirmService.classList.remove("hide");
+    var checkboxes = document.querySelectorAll("input[type=checkbox]");
+    for (var i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].disabled = true;
+}
 })
