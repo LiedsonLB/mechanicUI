@@ -1,5 +1,5 @@
 # mechanicUI - interface de APP de serviçoes
-Um repositorio UI de um sistema de serviço de mecanico online que usuario verifica os serviços que deseja realizar
+Um repositorio UI de um sistema de serviço de mecanico online em que o usuario verifica os serviços que deseja realizar
 
 # Conhecimentos utilizados:
 <div style="display: flex;">
